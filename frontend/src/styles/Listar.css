@@ -1,0 +1,19 @@
+.Listar body{
+  background-color: #edc988;
+  }
+  .btn{ 
+  background: transparent;
+  color: black;
+  border: 15px solid transparent;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: left;
+  margin: auto;
+  
+  }
+  .btn:hover{
+    color: #968c83;
+    background: transparent;
+    border: 15px solid transparent;
+  
+  }

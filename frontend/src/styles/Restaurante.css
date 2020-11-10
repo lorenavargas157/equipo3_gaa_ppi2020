@@ -1,0 +1,21 @@
+.Restaurante body{
+  background-color: #edc988;
+}
+
+.Desc{
+text-align: left;
+display: inline-block;
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+
+}
+.Desc h1{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.imghotel{
+  height: 50vh;
+  width: 75vh;
+}

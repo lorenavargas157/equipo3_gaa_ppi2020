@@ -61,7 +61,7 @@ export const Registro1 = () => {
                 </Link>
               </p>
               <p>
-                <Link class="btn btn-secondary" to="/Registrod" role="button">
+                <Link class="btn btn-secondary" to="/Registroc" role="button">
                   <font className="Leisy:)">
                     <font className="Leisy:)">Register</font>
                   </font>

@@ -6,7 +6,7 @@ export const Registroc = () => {
     <div className="Registro py-5 text-center mb-4">
       <form className="form-signin">
         <img className="mb-4" src="./imgs/caremonda.png" alt="Logo" width="200" height="200" />
-        <h1 class="h3 mb-3 font-weight-normal">Iniciar sesion</h1>
+        <h1 class="h3 mb-3 font-weight-normal">Registrarse</h1>
         <label for="inputEmail" class="sr-only">
           Email address
         </label>
@@ -64,7 +64,7 @@ export const Registroc = () => {
         </div>
 
         <p>
-                <Link class="btn btn-secondary" to="/Mapa1" role="button">
+                <Link class="btn btn-secondary" to="/Listah1" role="button">
                   <font className="Leisy:)">
                     <font className="Leisy:)">INICIAR</font>
                   </font>

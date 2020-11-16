@@ -1,0 +1,35 @@
+.Listah body {
+  background-color: #b3a997;
+}
+
+
+.Listah .btn {
+  background: none;
+  color: black;
+  border: 1px solid transparent;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: left;
+  margin: auto;
+}
+.Listah .btn:hover {
+  background: none;
+  color: #968c83;
+  border: 1px solid transparent;
+}
+.columna1 {
+  float: left;
+  text-align: left;
+  margin: 0;
+}
+.columna2 {
+  float: left;
+  text-align: left;
+  margin: 0;
+}
+
+.columna3 {
+  float: right;
+  text-align: left;
+  margin: 0;
+}

@@ -1,13 +1,13 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import "../styles/Listar.css";
+import "../styles/Listah.css";
 import  Menu1  from "../components/Menu1";
 
 
 const Listar = (props) => {
   const { history } = props;
   return (
-    <div className="Listar">
+    <div className="Lista">
       <Menu1/>
       <body>
         <div className="botones">
@@ -41,7 +41,7 @@ const Listar = (props) => {
           </center>
         </div>
         <center>
-        <div>
+        <div className="flechas">
           <button className="Back btn" onClick={() => history.goBack()}>
             <img
               className="mr-3"

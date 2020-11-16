@@ -1,8 +1,7 @@
-.Listah body {
-  background-color: #edc988;
-  
+.botones {
+  background-color: #d6c097;
 }
-.btn {
+.Lista .btn {
   background: transparent;
   color: black;
   border: 15px solid transparent;
@@ -11,8 +10,12 @@
   text-align: left;
   margin: auto;
 }
-.btn:hover {
+.Lista .btn:hover {
   color: #968c83;
   background: transparent;
   border: 15px solid transparent;
+}
+
+.Lista .flechas{
+  background-color: #d6c097;
 }

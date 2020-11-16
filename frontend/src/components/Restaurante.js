@@ -19,17 +19,17 @@ const Restaurante = (props) => {
             />
           </div>
         </center>
-        <center>
+      
           <div className="Desc py-5">
-            <h1 className="titulo1">la fogata</h1>
-            <h1 className="Descripcion">
+           <center> <h1 className="titulo1">La fogata</h1></center>
+            <center><h1 className="Descripcion">
             Es un restaurante que ofrece parrilla y comida típica, enfocadas en brindar al cliente platos de la mejor calidad. Su ubicación está estratégicamente al frente de embalse de Guatapé.
               <br />
               Permite la vista mas agradable de este lugar del restaurante.  
-            </h1>
-            <h1 className="direccion">Cra. 30 ##31 - 32, Guatape</h1>
+            </h1></center>
+            <center><h1 className="direccion">Cra. 30 ##31 - 32, Guatape</h1></center>
           </div>
-        </center>
+      
         <center>
         <div>
           <button className="Back btn" onClick={() => history.goBack()}>

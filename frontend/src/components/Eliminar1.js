@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 
-const Eliminar = (props) => {
+const Eliminar1 = (props) => {
   const { history } = props;
   return (
     <div className="calificar1">
@@ -12,14 +12,14 @@ const Eliminar = (props) => {
           <button
             type="button"
             className="btn btn-sm btn-outline-secondary"
-            onClick={() => history.push("/Listah1")}
+            onClick={() => history.push("/Listar1")}
           >
             Aceptar
           </button>
           <button
             type="button"
             className="btn btn-sm btn-outline-secondary"
-            onClick={() => history.push("/Listah1")}
+            onClick={() => history.push("/Listar1")}
           >
             cancelar
           </button>
@@ -28,4 +28,4 @@ const Eliminar = (props) => {
     </div>
   );
 };
-export default withRouter(Eliminar);
+export default withRouter(Eliminar1);

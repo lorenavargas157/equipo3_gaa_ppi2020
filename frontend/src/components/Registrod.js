@@ -7,7 +7,7 @@ export const Registro2 = () => {
        
       <form className="form-signin">
         <img className="mb-4" src="./imgs/caremonda.png" alt="Logo" width="200" height="200" />
-        <h1 class="h3 mb-3 font-weight-normal">Iniciar sesion</h1>
+        <h1 class="h3 mb-3 font-weight-normal">Registrarse</h1>
         <label for="inputEmail" class="sr-only">
           Email address
         </label>

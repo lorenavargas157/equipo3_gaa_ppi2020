@@ -21,10 +21,10 @@ const Sitio_interes = (props) => {
         </center>
         <center>
           <div className="Desc py-5">
-            <h1 className="titulo1">calles del recuerdo</h1>
-            <h1 className="Descripcion">
+            <center><h1 className="titulo1">calles del recuerdo</h1></center>
+            <center><h1 className="Descripcion">
            Es este el pueblo colorido del oriente antioqueño, sus habitantes intentarán conservar aquella parte de la historia que les fue arrebatada.
-            </h1>
+            </h1></center>
           </div>
         </center>
         <center>

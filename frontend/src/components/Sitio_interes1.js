@@ -11,7 +11,7 @@ const Sitio_interes1 = (props) => {
         <center>
           <div className="la-fogata py-5">
             <img
-              src="./imgs/calles_recuerdos.jpg"
+              src="./imgs/calles_recuerdo.jpg"
               className="imghotel"
               alt="imghotel"
             />
@@ -19,15 +19,15 @@ const Sitio_interes1 = (props) => {
         </center>
         <center>
           <div className="Desc py-5">
-            <h1 className="titulo1">calles del recuerdo</h1>
-            <h1 className="Descripcion">
+          <center>  <h1 className="titulo1">calles del recuerdo</h1></center>
+            <center><h1 className="Descripcion">
            Es este el pueblo colorido del oriente antioqueño, sus habitantes intentarán conservar aquella parte de la historia que les fuE arrebatada.
-            </h1>
+            </h1></center>
           </div>
         </center>
         <center>
         <div>
-          <button className="Back btn" onClick={() => history.goBack()}>
+          <button className="Back btn" onClick={() => history.push("/Listas1")}>
             <img
               className="mr-3"
               src="./imgs/Iconatras.png"
@@ -37,9 +37,9 @@ const Sitio_interes1 = (props) => {
               loading="lazy"
             />
           </button>
-          <button type="button" class="btn btn-secondary" onClick={() => history.goBack()}>AGREGAR</button>
+          <button type="button" class="btn btn-secondary" onClick={() => history.push("/Actualizar2")}>AGREGAR</button>
           <span>
-            <button className="Back btn" onClick={() => history.goBack()}>
+            <button className="Back btn" onClick={() => history.push("/Calificar")}>
               <img
                 src="./imgs/Iconnext.png"
                 width="45"

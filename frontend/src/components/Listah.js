@@ -1,13 +1,13 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import "../styles/Listah.css";
-import  Menu1  from "../components/Menu1";
+import Menu1 from "../components/Menu1";
 
 const Listah = (props) => {
   const { history } = props;
   return (
-    <div className="Listah">
-      <Menu1/>
+    <div className="Lista">
+      <Menu1 />
       <body>
         <div className="botones">
           <center>
@@ -36,30 +36,33 @@ const Listah = (props) => {
           </center>
         </div>
         <center>
-        <div>
-          <button className="Back btn" onClick={() => history.goBack("/")}>
-            <img
-              className="mr-3"
-              src="./imgs/Iconatras.png"
-              width="100"
-              height="60"
-              alt="Logo"
-              loading="lazy"
-            />
-          </button>
-         
-          <span>
-            <button className="Back btn" onClick={() => history.push("/Listar")}>
+          <div className="flechas">
+            <button className="Back btn" onClick={() => history.goBack("/")}>
               <img
-                src="./imgs/Iconnext.png"
-                width="45"
-                height="35"
+                className="mr-3"
+                src="./imgs/Iconatras.png"
+                width="100"
+                height="60"
                 alt="Logo"
                 loading="lazy"
               />
             </button>
-          </span>
-        </div>
+
+            <span>
+              <button
+                className="Back btn"
+                onClick={() => history.push("/Listar")}
+              >
+                <img
+                  src="./imgs/Iconnext.png"
+                  width="45"
+                  height="35"
+                  alt="Logo"
+                  loading="lazy"
+                />
+              </button>
+            </span>
+          </div>
         </center>
       </body>
     </div>

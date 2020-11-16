@@ -1,13 +1,13 @@
 import React from "react";
 import { withRouter, Link } from "react-router-dom";
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import { Navbar, Nav,  } from "react-bootstrap";
 import "../styles/Menu1.css";
 
-export const Menu1 = () => {
+export const Menu2 = () => {
   return (
     <div classname="Bienvenida">
       <Navbar bg="" expand="lg">
-        <Navbar.Brand href="#home">Lool UP guatape</Navbar.Brand>
+        <Navbar.Brand href="#home">Look up guatape</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -25,4 +25,4 @@ export const Menu1 = () => {
   );
 };
 
-export default withRouter(Menu1);
+export default withRouter(Menu2);

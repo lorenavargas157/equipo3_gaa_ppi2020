@@ -48,7 +48,7 @@ const Hotel1 = (props) => {
               loading="lazy"
             />
           </button>
-          <button type="button" class="btn btn-secondary" onClick={() => history.push()}>ACTUALIZAR</button>
+          <button type="button" class="btn btn-secondary" onClick={() => history.push("/Actualizar")}>ACTUALIZAR</button>
           <span>
             <button className="Back btn" onClick={() => history.push("/Listar1")}>
               <img

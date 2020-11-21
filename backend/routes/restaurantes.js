@@ -66,4 +66,4 @@ mysqlConnection.query(ActualizarTipo,tipo, (err, rows,fields) => {
   
 
 
-module.exports = restaurantes;
+module.exports = router;

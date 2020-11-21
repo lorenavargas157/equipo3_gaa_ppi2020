@@ -9,8 +9,8 @@ router.get('/',(req,res)=>{
 
         // Tipo usuario
     //Petición get
-    router.get('/restaurantes.js',(req,res)=>{
-    mysqlConnection.query('SELECT * FROM restaurantes.js',
+    router.get('/destino.js',(req,res)=>{
+    mysqlConnection.query('SELECT * FROM destino.js',
     (err,rows,fields)=>{
       if(!err)
      {
@@ -22,28 +22,28 @@ router.get('/',(req,res)=>{
 }) 
 
     //Petición post
-    router.post('/restaurantes.js', (req, res) => {
+    router.post('/destino.js', (req, res) => {
     const {nombre, descripcion} = req.body
     let tipo = [nombre,descripcion];
-    let nuevoTipo = `INSERT INTO restaurantes.js VALUES (?,?);`
+    let nuevoTipo = `INSERT INTO destino.js VALUES (?,?);`
 
     router.query(nuevoTipo,tipo, (err,results,fields) => {
      if(err){
        return console.error(err.message);
      }
-     res.json({message:`restaurantes.js Ingresado`})
+     res.json({message:`destino.js Ingresado`})
    });
   });
   
      //Petición put
-     router.put('/restaurantes.js/:id', (req,res) => {
+     router.put('/destino.js/:id', (req,res) => {
   const {nombre, descripcion} = req.body
   const { id } = req.params 
 let tipo = [nombre, descripcion, id];
-let ActualizarTipo =`UPDATE restaurantes.js SET Nombre = ? Descripcion = ?  WHERE ID = ?`;
+let ActualizarTipo =`UPDATE destino.js SET Nombre = ? Descripcion = ?  WHERE ID = ?`;
 mysqlConnection.query(ActualizarTipo,tipo, (err, rows,fields) => {
    if(!err){
-    res.json({status: `Los restaurantes han sido actualizadas con éxito`});
+    res.json({status: `Los destino han sido actualizadas con éxito`});
    }else{
      console.log(err);
    }
@@ -51,11 +51,11 @@ mysqlConnection.query(ActualizarTipo,tipo, (err, rows,fields) => {
 });
 
   //PETICIÓN O SERVICIO DELETE - ELIMINACIÓN DE DATOS
-  router.delete('/restaurantes.js/:ID', (req,res) => {
+  router.delete('/destino.js/:ID', (req,res) => {
     const { id } = req.params;
-    mysqlConnection.query(`DELETE FROM restaurantes WHERE ID =?`,[id],(err,rows,fields) => {
+    mysqlConnection.query(`DELETE FROM destino WHERE ID =?`,[id],(err,rows,fields) => {
       if("!err"){
-        res.json({status: `Los restaurantes han sido eliminadas`})
+        res.json({status: `Los destinos han sido eliminadas`})
       }else{
         console.log(err);
       }

@@ -11,7 +11,7 @@ router.get('/',(req,res)=>{
     //Petición get
     router.get('/destino.js',(req,res)=>{
     mysqlConnection.query('SELECT * FROM destino.js',
-    (err,rows,fields)=>{
+    (err,rows,fields)=>{ 
       if(!err)
      {
        res.json(rows);

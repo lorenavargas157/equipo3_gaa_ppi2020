@@ -40,7 +40,7 @@ router.get('/',(req,res)=>{
   const {nombre, descripcion} = req.body
   const { id } = req.params 
 let tipo = [nombre, descripcion, id];
-let ActualizarTipo =`UPDATE rutas.js SET Nombre = ? Descripcion = ?  WHERE ID = ?`;
+let ActualizarTipo =`UPDATE restaurantes.js SET Nombre = ? Descripcion = ?  WHERE ID = ?`;
 mysqlConnection.query(ActualizarTipo,tipo, (err, rows,fields) => {
    if(!err){
     res.json({status: `Las restaurantes han sido actualizadas con éxito`});

@@ -1,15 +1,15 @@
 const {Router} = require('express');
-const usuario = usuario ();
+const router = Router ();
 
 const mysqlConnection = require('./db/db.js');
 
-usuario.get('/',(req,res)=>{
+router.get('/',(req,res)=>{
   res.send('Si funciona')
 })
 
         // Tipo usuario
     //Petición get
-    usuario.get('/usuario.js',(req,res)=>{
+    router.get('/usuario.js',(req,res)=>{
     mysqlConnection.query('SELECT * FROM usuario.js',
     (err,rows,fields)=>{
       if(!err)
@@ -22,12 +22,12 @@ usuario.get('/',(req,res)=>{
 }) 
 
     //Petición post
-    usuario.post('/usuario.js', (req, res) => {
+    router.post('/usuario.js', (req, res) => {
     const {nombre, descripcion} = req.body
     let tipo = [nombre,descripcion];
     let nuevoTipo = `INSERT INTO usuario.js VALUES (?,?);`
 
-    usuario.query(nuevoTipo,tipo, (err,results,fields) => {
+    router.query(nuevoTipo,tipo, (err,results,fields) => {
      if(err){
        return console.error(err.message);
      }
@@ -36,7 +36,7 @@ usuario.get('/',(req,res)=>{
   });
   
      //Petición put
-     usuario.put('/usuario.js/:id', (req,res) => {
+     router.put('/usuario.js/:id', (req,res) => {
   const {nombre, descripcion} = req.body
   const { id } = req.params 
 let tipo = [nombre, descripcion, id];
@@ -51,7 +51,7 @@ mysqlConnection.query(ActualizarTipo,tipo, (err, rows,fields) => {
 });
 
   //PETICIÓN O SERVICIO DELETE - ELIMINACIÓN DE DATOS
-  usuario.delete('/usuario.js/:ID', (req,res) => {
+  router.delete('/usuario.js/:ID', (req,res) => {
     const { id } = req.params;
     mysqlConnection.query(`DELETE FROM usuario WHERE ID =?`,[id],(err,rows,fields) => {
       if("!err"){
@@ -66,4 +66,4 @@ mysqlConnection.query(ActualizarTipo,tipo, (err, rows,fields) => {
   
 
 
-module.exports = usuario;
+module.exports = router;
